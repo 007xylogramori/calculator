@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
+
+</head>
+
+<body>
+    <div class="supercontainer">
+        <div class="container">
+            <div class="display">
+                <div class="text" id="text"></div>
+            </div>
+
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn special " id="clearall" onclick="call()">AC</button></td>
+                        <td><button class="btn special " id="clearone" onclick="cone()">C</button></td>
+                        <td><button class="btn operator " id="divide" onclick="displayit('/')"> / </button></td>
+                        <td><button class="btn operator" id="multiply" onclick="displayit('*')"> x </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn number" id="7" onclick="displayit('7')">7</button></td>
+                        <td><button class="btn number" id="8" onclick="displayit('8')">8</button></td>
+                        <td><button class="btn number" id="9" onclick="displayit('9')"> 9 </button></td>
+                        <td><button class="btn operator" id="add" onclick="displayit('+')"> + </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn number" id="4" onclick="displayit('4')">4</button></td>
+                        <td><button class="btn number" id="5" onclick="displayit('5')">5</button></td>
+                        <td><button class="btn number" id="6" onclick="displayit('6')"> 6 </button></td>
+                        <td><button class="btn operator " id="sub" onclick="displayit('-')"> - </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn number" id="1" onclick="displayit('1')">1</button></td>
+                        <td><button class="btn number" id="2" onclick="displayit('2')">2</button></td>
+                        <td><button class="btn number" id="3" onclick="displayit('3')"> 3 </button></td>
+                        <td rowspan="2"><button class="btn special " id="equal" onclick="onequal()"> = </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn special" id="toggle" onclick="toggle()"><span class="to">&#9818;</span></button></td>
+                        <td><button class="btn number" id="0" onclick="displayit('0')">0</button></td>
+                        <td><button class="btn operator" id="decimal" onclick="displayit('.')"> . </button></td>
+                        </td>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="toggle.js"></script>
+</body>
+
+</html>
